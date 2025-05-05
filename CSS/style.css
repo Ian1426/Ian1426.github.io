@@ -1,3 +1,4 @@
+/* Home Page */
 * {
     margin: 0;
     padding: 0;
@@ -181,3 +182,36 @@ header {
     display: block;
 }   
 
+/* About */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 25px 10%;
+    background-color: rgb(172, 222, 235);
+    background-size: cover;
+    width: 75vw;
+    height: 150vh;
+    margin: 20px 0;
+}
+
+.about-img img {
+    width: 40vw;
+}
+
+.heading {
+    text-align: left;
+    font-size: 60px;
+}
+
+.about-content h3 {
+    font-size: 1.6rem;
+}
+
+.about-content p{
+    line-height: 27px;
+    margin: 2rem 0 2;
+    font-size: 19px;
+
+}
