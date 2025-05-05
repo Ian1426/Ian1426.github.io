@@ -18,10 +18,20 @@ body {
     margin-bottom: 220px;
     position: relative;
     height: 100%;
-    background: slateblue;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 30px;
     align-content: center;
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+}
 
+@keyframes zoom-in {
+    100% {
+        transform: scale(1);
+    }
+    
 }
 
 header {
@@ -34,6 +44,21 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+
+.animated {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slide-in 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .logo {
@@ -67,6 +92,7 @@ header {
     gap: 50px;
     padding: 50px 5% 0;
     color: #fff;
+    animation-delay: 1.5s;
 }
 
 .home-detail h1{
@@ -94,6 +120,8 @@ header {
     text-decoration: none;
     font-weight: 500;
     transition: .7s;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -103,11 +131,15 @@ header {
 }
 
 .home-detail .social-icons {
-    margin-left: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
 }
 
 .home-detail .social-icons a {
-    display: inline-flex;
     padding: 8px;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -121,4 +153,39 @@ header {
     box-shadow: 0 0 10px #fff;
     color: #87ceb8;
     transition: .7s;
+}
+
+.img-box {
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid #87ceb8;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #87ceb8;
+    overflow: hidden;
+}
+
+.img-box img {
+    float: right;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+        object-fit: cover;
+        padding-left: 5px;
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}   
+
+.home .home-detail .h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #0000;
+    
 }
