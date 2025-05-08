@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <title>Ian's Personal Portfolio</title>
     <link           
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet" />
@@ -23,8 +23,8 @@
             <nav class="navbar">
                 <a href="#" class="active">Home</a>
                 <a href="#about">About</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Service</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#">Contact</a>
             </nav>
         </header>
@@ -46,15 +46,21 @@
                 <!--Image Container -->
             <div class="container">
                 <div class="img-box">
-                    <img src="FEU.png" alt="">
+                    <img src="IMAGES/FEU.png" alt="">
                 </div>
             </div>
         </section>
 
+        <!-- Linking Javascript -->
+
+        <script src="<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="script.js"></script>
+    
+
                     <!--About Page -->
            <section class="about" id="about">
             <div class="about-img">
-                <img src="aboutPIC1.png" alt="pic"/>
+                <img src="IMAGES/aboutPIC1.png" alt="pic"/>
             </div>
 
                 <!--About Page Details -->
@@ -70,7 +76,7 @@
             </section>
  
                 <!--Services Page -->
-            <section class="services">
+            <section class="services" id="services">
                 <h2 class="heading">My <span>Services</span> </h2>
 
                 <div class="service-container">
@@ -89,8 +95,8 @@
                 <div class="service-container">
                     <div class="service-box">
                         <!--Icons-->
-                        <i class="ri-braces-fill"></i>
-                        <h3> Web Development</h3>
+                        <i class="ri-fingerprint-2-line"></i>
+                        <h3> Digital Forensics</h3>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod, maiores repellendus dignissimos mollitia eius sapiente quasi, 
                             officiis voluptas assumenda minima modi voluptatibus ipsa sunt quaerat ab odit ducimus itaque.
@@ -102,8 +108,8 @@
                 <div class="service-container">
                     <div class="service-box">
                         <!--Icons-->
-                        <i class="ri-braces-fill"></i>
-                        <h3> Web Development</h3>
+                        <i class="ri-database-2-line"></i>
+                        <h3> Database</h3>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod, maiores repellendus dignissimos mollitia eius sapiente quasi, 
                             officiis voluptas assumenda minima modi voluptatibus ipsa sunt quaerat ab odit ducimus itaque.
@@ -111,21 +117,52 @@
                         <button>Read More</button> 
                     </div>
                 </div> 
-
-                <div class="service-container">
-                    <div class="service-box">
-                        <!--Icons-->
-                        <i class="ri-braces-fill"></i>
-                        <h3> Web Development</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod, maiores repellendus dignissimos mollitia eius sapiente quasi, 
-                            officiis voluptas assumenda minima modi voluptatibus ipsa sunt quaerat ab odit ducimus itaque.
-                        </p>
-                        <button>Read More</button> 
-                    </div>
-                </div> 
-
             </section>
+
+            <!-- Portfolio Section -->
+
+            <section class="portfolio" id="portfolio">
+                <h2 class="heading" id="portfolioHeading">My <span> Projects</span></h2>
+                <div class="portfolio-container">
+                    <div class="portfolio-box">
+                        <img src="IMAGES/cyber security.png" alt="CS1" />
+                <div class="portfolio-layer">
+                    <h4> Cybersecurity </h4>
+                    <p> 
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod, maiores repellendus dignissimos mollitia eius sapiente quasi, 
+                        officiis voluptas assumenda minima modi voluptatibus ipsa sunt quaerat ab odit ducimus itaque.
+                    </p>
+                    <!-- Putting the link in the form of anchor tag -->
+                    <a href=""><i class="ri-links-fill"></i></a>
+                </div>
+            </div>
+            <!-- Copy this code 4 times to make 4 boxes -->
+                    <div class="portfolio-box">
+                        <img src="IMAGES/Generative AI-A1.png" alt="CS1" />
+                <div class="portfolio-layer">
+                    <h4> Generative AI </h4>
+                    <p> 
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod, maiores repellendus dignissimos mollitia eius sapiente quasi, 
+                        officiis voluptas assumenda minima modi voluptatibus ipsa sunt quaerat ab odit ducimus itaque.
+                    </p>
+                    <!-- Putting the link in the form of anchor tag -->
+                    <a href=""><i class="ri-links-fill"></i></a>
+                </div>
+            </div>
+                    <div class="portfolio-box">
+                        <img src="IMAGES/CPE PRACTICAL 8 QUARTER 4 CAMPING.png" alt="CS1" />
+                <div class="portfolio-layer">
+                    <h4> Web Design </h4>
+                    <p> 
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod, maiores repellendus dignissimos mollitia eius sapiente quasi, 
+                        officiis voluptas assumenda minima modi voluptatibus ipsa sunt quaerat ab odit ducimus itaque.
+                    </p>
+                    <!-- Putting the link in the form of anchor tag -->
+                    <a href=""><i class="ri-links-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
