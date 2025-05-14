@@ -1,4 +1,4 @@
-/* Home Page */
+/* Home Page Stylings */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
 }
 
+/* Body layout */
 body {
     height: 100vh;
     background-size: cover;
@@ -16,6 +17,7 @@ body {
     background-color: rgb(172, 222, 235);
 }
 
+/* Content container */
 .container {
     margin: 220px;
     margin-bottom: 220px;
@@ -28,6 +30,7 @@ body {
     animation: zoom-in 1s ease forwards;
 }
 
+/* Zoom-in Animation */
 @keyframes zoom-in {
     100% {
         transform: scale(1);
@@ -35,6 +38,7 @@ body {
     
 }
 
+/* Header stylings */
 header {
     position: fixed;
     top: 0;
@@ -47,12 +51,12 @@ header {
     z-index: 100;
 }
 
+/* Sliding elements Animations */
 .animated {
     transform: translateY(30px);
     opacity: 0;
     animation: slide-in 1s ease forwards;
     animation-delay: 1s;
-
 }
 
 @keyframes slide-in {
@@ -62,14 +66,15 @@ header {
     }
 }
 
+/* Logo styles */
 .logo {
     font-size: 25px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-
 }
 
+/* Links for Nav bar */
 .navbar a { 
     font-size: 18px;
     color: #fff;
@@ -78,14 +83,15 @@ header {
     margin-left: 35px;
     border-bottom: 2px solid transparent;
     transition: .7s;
-
 }
 
+/* Hover and active Nav bar */
 .navbar a:hover,
 .navbar a.active{
     border-color: #fff;
 }
 
+/* Layout for Home */
 .home {
     display: flex;
     align-items: center;
@@ -96,6 +102,7 @@ header {
     animation-delay: 1.5s;
 }
 
+/* Headings for home */
 .home-detail h1{
     font-size: 55px;
     line-height: 1;
@@ -107,11 +114,13 @@ header {
     color: rgb(0, 80, 252)
 }
 
+/* Download button and social icons container */
 .home-detail .download-social {
     display: flex;
     align-items: center;
 }
 
+/* Download button stylings */
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -127,12 +136,14 @@ header {
     margin-bottom: 20px;
 }
 
+/* Download button effects*/
 .btn:hover {
     background: transparent;
     box-shadow: none;
     color: #fff;
 }
 
+/* Social icons */
 .home-detail .social-icons {
     margin-left: 0;
     margin-right: 0;
@@ -142,6 +153,7 @@ header {
     margin: 0;
 }
 
+/* Social icon links */
 .home-detail .social-icons a {
     padding: 8px;
     border: 2px solid #fff;
@@ -151,6 +163,7 @@ header {
     margin: 0 8px;
 }
 
+/* Social icon effects */
 .home-detail .social-icons a:hover {
     background: #fff;
     box-shadow: 0 0 10px #fff;
@@ -158,12 +171,11 @@ header {
     transition: .7s;
 }
 
-/* Adjust the .img-box position */
-
+/* Profile image box position */
 .img-box {
     position: fixed;
     top: 50%;   
-    left: 25vh; /* Increased from 10% to 15% to move it slightly to the right */
+    left: 25vh; 
     transform: translate(-50%, -50%);
     display: flex;
     right: 20%;   
@@ -175,6 +187,7 @@ header {
     overflow: hidden;
 }
 
+/* Profile image stylings */
 .img-box img {
     float: right;
     margin: 0;
@@ -190,7 +203,7 @@ header {
     display: block;
 }   
 
-/* About */
+/* About layout */
 .about {
     display: flex;
     justify-content: center;
@@ -202,10 +215,12 @@ header {
     margin: 20px 0;
 }
 
+/* About image */
 .about-img img {
     width: 40vw;
 }   
 
+/* Section headings */
 .heading {
     text-align: left;
     font-size: 60px ;
@@ -219,16 +234,19 @@ header {
     color: blue;
 }
 
+/* About paragraph */
 .about-content p{
     line-height: 27px;
     margin: 0;  
     font-size: 19px;
 } 
 
+/* No animation for specific elements */
 .no-animation {
     animation: none;
 }
 
+/* Button stylings */
 button {
     display: inline-block;
     padding: 10px 30px;
@@ -244,23 +262,24 @@ button {
     margin-bottom: 20px;
 }
 
+/* Button effects */
 button:hover {
     background: transparent;
     box-shadow: none;
     color: #fff;
 }
 
+/* Highlighted span in headings */
 h2 span {
     color: #12a7ec;
 }
 
-/* Services */
+/* Services section */
 .services {
     padding: 25px 10%;
 }
 
-/* Modify the .service-container class */
-
+/* Service layout */
 .service-container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping if boxes exceed the container width */
@@ -272,6 +291,7 @@ h2 span {
     margin: 0 auto; /* Centers the container itself */
 }
 
+/* Individual service box stylings */
 .service-container .service-box {
     flex: 1 1 1rem;
     background-color: rgb(172, 222, 235);
@@ -292,6 +312,7 @@ h2 span {
     overflow: hidden; /* Prevents content from overflowing */
 }
 
+/* Service box effects */
 .service-container .service-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #87ceb8;
@@ -304,30 +325,34 @@ h2 span {
     color: blue
 }
 
+/* Service icon stylings */
 .service-box i {
     font-size: 3rem;
     color: #0804f0;
 }
 
+/* Service heading */
 .service-box h3 {
     font-size: 1.6rem;
 }
 
+/* Service paragraph*/
 .service-box p {
     margin: 1rem 0 3rem;
 }
 
+/* Center services heading */
 .services h2 {
     text-align: center;
 }
 
+/* Service box border color */
 .service-container .service-box :hover{
     border-color: #87ceb8; 
     transform: scalse(1);
 }
 
-/* Portfolio */
-
+/* Portfolio stylings */
 .heading {
     margin-bottom: 50px;
     border-top: 1px solid black;
@@ -343,6 +368,7 @@ h2 span {
     height: 100vh;
 }
 
+/* Portfolio grid layout */
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -350,6 +376,7 @@ h2 span {
     gap: 2.5rem;
 }
 
+/* Portfolio item box */
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 1rem;
@@ -358,11 +385,13 @@ h2 span {
     display: flex;
 }
 
+/* Portfolio images */
 .portfolio-box img {
     width: 100%;
     transition: 0.5s ease;
 }
 
+/* Portfolio overlay layer */
 .portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
@@ -381,16 +410,19 @@ h2 span {
     transform: translateY(100%);
 }
 
+/* Portfolio overlay heading */
 .portfolio-layer h4 {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
+/* Portfolio overlay paragraph */
 .portfolio-layer p {
     font-size: 0.9rem;
     margin: .2rem 0 1rem;
 }
 
+/* Portfolio overlay link */
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
@@ -401,15 +433,18 @@ h2 span {
     border-radius: 50%;
 }
 
+/* Portfolio overlay icon */
 .portfolio-layer a i {
     font-size: 2rem;
     color: #1f242dc0;
 }
 
+/* Portfolio image effects */
 .portfolio-box:hover img {
     transform: scale(1.1);
 }
 
+/* Portfolio overlay show on hover */
 .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
 }
@@ -418,14 +453,15 @@ h2 span {
     color: #12a7ec;
 }
 
-/* Contacts */
-
+/* Contact stylings */
 .contact-container {
     border-top: 1px solid black;
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
+
+/* Contact info box */
 .contact-info {
     width: 50%;
     background-color: white;
@@ -455,6 +491,7 @@ h2 span {
     margin-top: 15px;
 }
 
+/* Contact image box */
 .image {
     width: 50%;
     display: flex;
@@ -469,6 +506,7 @@ h2 span {
     border-radius: 8px;
 }
 
+/* Footer stylings */
 footer {
     background-color: #007BFF;
     color: white;

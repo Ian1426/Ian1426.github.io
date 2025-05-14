@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ian's Personal Portfolio</title>
+    <!-- Linking Remixicon CDN for icons -->
     <link           
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet" />
-    <link rel="stylesheet" href="./CSS/style.css">          <!-- Linking External CSS-->
+    <!-- Linking External CSS file -->
+    <link rel="stylesheet" href="./CSS/style.css">          
+    <!-- Linking Font styles from google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
@@ -15,11 +18,12 @@
 </head>
 
 <body>
-            <!--Identity - Container -->
+    <!-- Main container for the whole page -->
     <div class="container"> 
+        <!-- Header section with logo and navigation bar -->
         <header class="animated"> 
             <a href="#" class="logo"> Website </a>
-                <!--Navigation Bar -->
+            <!-- Navigation Bar -->
             <nav class="navbar">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
@@ -28,24 +32,24 @@
                 <a href="#contact">Contact</a>
             </nav>
         </header>
-            <!--Home Section - Body -->
+        <!-- Home Section -->
         <section class="home animated">
             <div class="home-detail">
                 <h1> Ian Santella</h1>
                 <h2> Cybersecurity Student</h2>
                 <div class="download-social">
-                <!-- ...existing code... -->
-                <a href="FILES/IanSantella.pdf" class="btn" download> Download</a>
-                <!-- ...existing code... -->
+                    <!-- Download Website Button -->
+                    <a href="FILES/IanSantella.pdf" class="btn" download> Download</a>
+                    <!-- Social Media Icons -->
                     <div class="social-icons">
-                        <a href="https://github.com/Ian1426" target="_blank"></i> <i class="ri-github-fill"></i></a>
-                        <a href="https://www.facebook.com/heynaix" target="_blank"></i> <i class="ri-facebook-fill"></i></a>
-                        <a href="https://www.instagram.com/heynaix__/" target="_blank"></i> <i class="ri-instagram-fill"></i></a>
-                        <a href="https://discord.com/channels/@heyynaix_" target="_blank"></i> <i class="ri-discord-fill"></i></a>    
+                        <a href="https://github.com/Ian1426" target="_blank"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.facebook.com/heynaix" target="_blank"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/heynaix__/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://discord.com/channels/@heyynaix_" target="_blank"><i class="ri-discord-fill"></i></a>    
                     </div>
                 </div>
             </div>
-                <!--Image Container -->
+            <!-- Home Page Image Container -->
             <div class="container">
                 <div class="img-box">
                     <img src="IMAGES/FEU.png" alt="">
@@ -53,187 +57,176 @@
             </div>
         </section>
 
-
-                    <!--About Page -->
-           <section class="about" id="about"> 
+        <!-- About Section -->
+        <section class="about" id="about"> 
             <div class="about-img">
                 <img src="IMAGES/aboutPIC1.png" alt="pic"/>
             </div>
-
-                <!--About Page Details -->
+            <!-- About Details -->
             <div class="about-content">
                 <div class="info-side"></div>
                 <h2> About<span> Me</span></h2>
                 <p>
                     I'am a 19 years old Cybersecurity student studying at Bathspa University RAK, UAE. I chose this course because I'm into learning new
                     techniques especially in encoding and decoding data. Cybersecurity offers vast and wide range of information that only committed and... 
-                    
                 </p>
-
+                <!-- Read More Button and Hidden Content -->
                 <button onclick="toggleReadMore()"> Read More </button>
-                <!-- Hidden Additional Content -->
                 <div id="moreContent" style="display: none;">
-
                     <p>
                         passionated students can learn. Aside from this, I'm also into esports related activites such 
                         as mobile game tournaments eg; PUBGM and Mobile Legends.
                     </p>
-
-                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
  
-                <!--Services Page -->
-            <section class="services" id="services">
-                <h2 class="heading">My <span>Services</span> </h2>
-
-                <div class="service-container">
-                    <div class="service-box">
-                        <!--Icons-->
-                        <a href="https://brainstation.io/course/online/intro-to-web-development" target="_blank"><i class="ri-braces-fill"></i></a>
-                        <h3> Web Development</h3>
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <h2 class="heading">My <span>Services</span> </h2>
+            <!-- Web Development Service1 -->
+            <div class="service-container">
+                <div class="service-box">
+                    <!-- Service Icon -->
+                    <a href="https://brainstation.io/course/online/intro-to-web-development" target="_blank"><i class="ri-braces-fill"></i></a>
+                    <h3> Web Development</h3>
+                    <p>
+                        Web development, often known as website development, deals with building, operating, and upgrading websites and web applications viewed in web browsers... 
+                    </p>
+                    <!-- Hidden More Content -->
+                    <div id="webDevelopmentMoreContent" style="display: none;">
                         <p>
-                            Web development, often known as website development, deals with building, operating, and upgrading websites and web applications viewed in web browsers... 
-                           
+                        The Fundamental Technologies included in Web Development are Html, Css, and Javascript. 
+                        Although the fields of web design and web development are closely connected, as both influence user experience, 
+                        the task of web development is mostly concerned with technical site and application building and coding. (BrainStation, n.d.)
                         </p>
-                        <div id="webDevelopmentMoreContent" style="display: none;">
-                            <p>
-                            The Fundamental Technologies included in Web Development are Html, Css, and Javascript. 
-                            Although the fields of web design and web development are closely connected, as both influence user experience, 
-                            the task of web development is mostly concerned with technical site and application building and coding. (BrainStation, n.d.)
-                            </p>
-                        </div>
-                        <button onclick="toggleContent('webDevelopmentMoreContent')">Read More</button> 
                     </div>
-                </div> 
-            </section>
-            
-                <div class="service-container">
-                    <div class="service-box">
-                        <!--Icons-->
-                        <a href="https://www.interpol.int/en/How-we-work/Innovation/Digital-forensics" target="_blank"><i class="ri-fingerprint-2-line"></i></a>
-                        <h3> Digital Forensics</h3>
-                        <p>
-                            Digital forensics represents a special field within forensic science dedicated to identifying, acquiring, analyzing, and presenting electronic data. 
-                            Because electronic evidence is significant in almost every type of criminal activity, digital forensics is required to support investigations by 
-                            law enforcement officials...
-                        </p>
-                        <div id="digitalForensicsMoreContent" style="display: none;">
-                            <p>
-                            Digital forensics exists primarily to retrieve and scrutinize digital data, thereby producing analyses that can be 
-                            used as evidence during legal proceedings. Each technique employed during digital forensics is based on dependable forensic practices to make 
-                            certain the evidence can be used legally. (INTERPOL, n.d.)
-                            </p>
-                        </div>
-                        <button onclick="toggleContent('digitalForensicsMoreContent')">Read More</button> 
-                    </div>
+                    <button onclick="toggleContent('webDevelopmentMoreContent')">Read More</button> 
                 </div>
-            </section>
-
-                <div class="service-container">
-                    <div class="service-box">
-                        <a href="https://learn.org/articles/What_Skills_Will_I_Learn_in_a_Database_Management_Course.html" target="_blank">
-                            <i class="ri-database-2-line"></i>
-                            </a>
-                            <h3>Database</h3>
-                            <p>
-                                These courses gives students the required abilities to plan, create, and oversee databases relevant to business applications. 
-                                One major objective in these courses is the study of Structured Query Language (SQL), which is the leading language used to manage 
-                                and alter databases...
-                                    
-                            </p>
-                            <div id="databaseMoreContent" style="display: none;">
-                            <p>
-                                Topics typically covered in addition include data and object modeling, relational algebra, relational database models, and application programming. 
-                                Students are introduced to the physical structure of databases as well as core concepts related 
-                                to dependability and performance improvement. (Learn.org, n.d.)
-                                
-                            </p>
-                            </div>
-                        <button onclick="toggleContent('databaseMoreContent')">Read More</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Portfolio Section -->
-
-            <section class="portfolio" id="portfolio">
-                <h2 class="heading" id="portfolioHeading">My <span> Projects</span></h2>
-                <div class="portfolio-container">
-                    <div class="portfolio-box">
-                        <img src="IMAGES/cyber security.png" alt="CS1" />
-                <div class="portfolio-layer">
-                    <p> 
-                        Cybersecurity applies different technological, procedural, and regulatory methods to make systems, networks, applications, devices, and 
-                        data resistant to cyber threats. Cybersecurity's main purpose is to control cyber attack risks and maintain the security of digital systems 
-                        and infrastructure from unwelcome access. (IT Governance, 2016)
-
+            </div> 
+        </section>
+        
+        <!-- Digital Forensics Service2 -->
+        <div class="service-container">
+            <div class="service-box">
+                <!-- Service Icon -->
+                <a href="https://www.interpol.int/en/How-we-work/Innovation/Digital-forensics" target="_blank"><i class="ri-fingerprint-2-line"></i></a>
+                <h3> Digital Forensics</h3>
+                <p>
+                    Digital forensics represents a special field within forensic science dedicated to identifying, acquiring, analyzing, and presenting electronic data. 
+                    Because electronic evidence is significant in almost every type of criminal activity, digital forensics is required to support investigations by 
+                    law enforcement officials...
+                </p>
+                <!-- Hidden More Content -->
+                <div id="digitalForensicsMoreContent" style="display: none;">
+                    <p>
+                    Digital forensics exists primarily to retrieve and scrutinize digital data, thereby producing analyses that can be 
+                    used as evidence during legal proceedings. Each technique employed during digital forensics is based on dependable forensic practices to make 
+                    certain the evidence can be used legally. (INTERPOL, n.d.)
                     </p>
-                    <!-- Putting the link in the form of anchor tag -->
-                    <a href="https://www.itgovernance.co.uk/what-is-cybersecurity" target="_blank"><i class="ri-links-fill"></i></a>
                 </div>
-            </div>
-            <!-- Copy this code 4 times to make 4 boxes -->
-                    <div class="portfolio-box">
-                        <img src="IMAGES/Generative AI-A1.png" alt="CS1" />
-                <div class="portfolio-layer">
-                    <p> 
-                        Generative AI is designed to develop synthetic data or built structures from both actual and synthetic data sources.
-                        It designates molecular structures that meet specified requirements in the field of drug discovery, towards new drug research. 
-                        (Stryker and Scapicchio, 2024)
-                        
-                    </p>
-                    
-                    <!-- Putting the link in the form of anchor tag -->
-                    <a href="https://www.ibm.com/think/topics/generative-ai" target="_blank"><i class="ri-links-fill"></i></a>
-                </div>
-            </div>
-                    <div class="portfolio-box">
-                        <img src="IMAGES/CPE PRACTICAL 8 QUARTER 4 CAMPING.png" alt="CS1" />
-                <div class="portfolio-layer">
-                    <p> 
-                        Web design is based on creating eye-pleasing and fully functional websites. 
-                        As a web designer, you will have to make the purpose of the website meet users’ needs for intuitive and effective interactions. 
-                        For this role, a variety of skills are needed from user experience (UX), to visual design, code, even problem-solving. (edX, 2024)
-
-                    </p>
-                    <!-- Putting the link in the form of anchor tag and linking the main website of information -->
-                    <a href="https://www.edx.org/learn/web-design" target="_blank"><i class="ri-links-fill"></i></a>
-                </div>
+                <button onclick="toggleContent('digitalForensicsMoreContent')">Read More</button> 
             </div>
         </div>
-    </section>
 
-            <!-- Contact Section -->
-            <section class="contact" id="contact"></section>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h1><span>Contact</span> Me</h1>
-                    <p> 
-                        If you have any questions or inquiries, feel free to reach out to me via email. 
-                        I will do my best to respond as soon as possible. 
+        <!-- Database Service3 -->
+        <div class="service-container">
+            <div class="service-box">
+                <!-- Service Icon -->
+                <a href="https://learn.org/articles/What_Skills_Will_I_Learn_in_a_Database_Management_Course.html" target="_blank">
+                    <i class="ri-database-2-line"></i>
+                </a>
+                <h3>Database</h3>
+                <p>
+                    These courses gives students the required abilities to plan, create, and oversee databases relevant to business applications. 
+                    One major objective in these courses is the study of Structured Query Language (SQL), which is the leading language used to manage 
+                    and alter databases...
+                </p>
+                <!-- Hidden More Content -->
+                <div id="databaseMoreContent" style="display: none;">
+                    <p>
+                        Topics typically covered in addition include data and object modeling, relational algebra, relational database models, and application programming. 
+                        Students are introduced to the physical structure of databases as well as core concepts related 
+                        to dependability and performance improvement. (Learn.org, n.d.)
                     </p>
-                        
-                    <div class="details">
-                        <p>📞 +971558083618</p>
-                        <p>✉️ santellabernardian@gmail.com</p>
-                        <p>🏠 Al Qasimia, Sharjah, United Arab Emirates</p>
+                </div>
+                <button onclick="toggleContent('databaseMoreContent')">Read More</button>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading" id="portfolioHeading">My <span> Projects</span></h2>
+            <div class="portfolio-container">
+                <!-- Portfolio Item 1 - Cybersecurity -->
+                <div class="portfolio-box">
+                    <img src="IMAGES/cyber security.png" alt="CS1" />
+                    <div class="portfolio-layer">
+                        <p> 
+                            Cybersecurity applies different technological, procedural, and regulatory methods to make systems, networks, applications, devices, and 
+                            data resistant to cyber threats. Cybersecurity's main purpose is to control cyber attack risks and maintain the security of digital systems 
+                            and infrastructure from unwelcome access. (IT Governance, 2016)
+                        </p>
+                        <!-- External Link -->
+                        <a href="https://www.itgovernance.co.uk/what-is-cybersecurity" target="_blank"><i class="ri-links-fill"></i></a>
                     </div>
                 </div>
-                <div class="image">
-                    <img src="IMAGES/contact-image1.png" alt="Contact Us Image">
+                <!-- Portfolio Item 2 - Generative AI-->
+                <div class="portfolio-box">
+                    <img src="IMAGES/Generative AI-A1.png" alt="CS1" />
+                    <div class="portfolio-layer">
+                        <p> 
+                            Generative AI is designed to develop synthetic data or built structures from both actual and synthetic data sources.
+                            It designates molecular structures that meet specified requirements in the field of drug discovery, towards new drug research. 
+                            (Stryker and Scapicchio, 2024)
+                        </p>
+                        <!-- External Link -->
+                        <a href="https://www.ibm.com/think/topics/generative-ai" target="_blank"><i class="ri-links-fill"></i></a>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 - Web Design-->
+                <div class="portfolio-box">
+                    <img src="IMAGES/CPE PRACTICAL 8 QUARTER 4 CAMPING.png" alt="CS1" />
+                    <div class="portfolio-layer">
+                        <p> 
+                            Web design is based on creating eye-pleasing and fully functional websites. 
+                            As a web designer, you will have to make the purpose of the website meet users’ needs for intuitive and effective interactions. 
+                            For this role, a variety of skills are needed from user experience (UX), to visual design, code, even problem-solving. (edX, 2024)
+                        </p>
+                        <!-- External Link -->
+                        <a href="https://www.edx.org/learn/web-design" target="_blank"><i class="ri-links-fill"></i></a>
+                    </div>
                 </div>
             </div>
-            <footer>
+        </section>
 
-                ©2025 Bathspa University RAK
-
-            </footer>
+        <!-- Contact Section -->
+        <section class="contact" id="contact"></section>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1><span>Contact</span> Me</h1>
+                <p> 
+                    If you have any questions or inquiries, feel free to reach out to me via email. 
+                    I will do my best to respond as soon as possible. 
+                </p>
+                <!-- Contact Details -->
+                <div class="details">
+                    <p>📞 +971558083618</p>
+                    <p>✉️ santellabernardian@gmail.com</p>
+                    <p>🏠 Al Qasimia, Sharjah, United Arab Emirates</p>
+                </div>
+            </div>
+            <!-- Contact Image -->
+            <div class="image">
+                <img src="IMAGES/contact-image1.png" alt="Contact Us Image">
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            ©2025 Bathspa University RAK
+        </footer>
                 
-    <!-- Linking Javascript -->
+        <!-- Linking Javascript file -->
         <script src="script.js"></script>
-    
-
 </body>
-
 </html>
