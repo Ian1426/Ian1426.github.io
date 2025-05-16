@@ -497,10 +497,10 @@ h2 span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #007BFF;
+    background-color: rgba(0, 123, 255, 0.3); 
     border-radius: 8px;
+    height: 80%;
 }
-
 .image img {
     max-width: 100%;
     border-radius: 8px;
