@@ -508,7 +508,7 @@ h2 span {
 
 /* Footer stylings */
 footer {
-    background-color: #007BFF;
+    background-color: rgba(0, 123, 255, 0.3); 
     color: white;
     padding: 20px;
     text-align: center;
